@@ -5,7 +5,7 @@ import Navbar from "../component/Navbar";
 const Header = () => {
   return (
     <div className="header">
-      <NavLink to="/home">
+      <NavLink to="/">
         <img 
           src="https://svgsilh.com/svg/2085075.svg" 
           alt="Company Logo" 
@@ -15,7 +15,7 @@ const Header = () => {
       </NavLink>
 
       <ul className="nav-links">
-        <Navbar a="Home" b="/home"></Navbar>
+        <Navbar a="Home" b="/"></Navbar>
         <Navbar a="Search" b="/search"></Navbar>
         <Navbar a="Cart" b="/cart"></Navbar>
         <Navbar a="Help" b="/help"></Navbar>
