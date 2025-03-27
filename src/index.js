@@ -8,6 +8,7 @@ import { Home } from "./pages/Home";
 import { Help } from "./pages/Help";
 import { Search } from "./pages/Search";
 import { Cart } from "./pages/Cart";
+import Restaurant from "./component/Restaurant";
 
 const NotFound = () => <h2>404 - Page Not Found</h2>;
 
@@ -16,10 +17,11 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
-      { index: true, element: <Home /> }, // ✅ Default page is Home
-      { path: "help", element: <Help /> },
-      { path: "search", element: <Search /> },
-      { path: "cart", element: <Cart /> },
+      { path:"/", element: <Home /> }, // ✅ Default page is Home
+      { path: "/help", element: <Help /> },
+      { path: "/search", element: <Search /> },
+      { path: "/cart", element: <Cart /> },
+      { path: "/restaurant/:resId", element:<Restaurant/>},
       { path: "*", element: <NotFound /> },
     ],
   },

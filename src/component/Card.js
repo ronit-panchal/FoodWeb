@@ -1,14 +1,18 @@
+
 import { useNavigate } from "react-router-dom";
+import "../style/home.css"; 
 
 const Card = ({ data }) => {
   const navigate = useNavigate();
 
+
   return (
-    <div className="card" onClick={() => navigate(`/restaurant/${data.info.id}`)}>
+    <div className="card" onClick={() => navigate(`/Restaurant/${data.info.id}`)}>
+      
       <img
         src={`images/${data?.info.cloudinaryImageId}.avif`}
         alt={data?.info.name}
-        onError={(e) => (e.target.src = "images/default.jpg")} // Fallback Image
+        onError={(e) => (e.target.src = "images/default.jpg")}
       />
       <div className="cardData">
         <h3 className="cardResName">{data?.info.name}</h3>

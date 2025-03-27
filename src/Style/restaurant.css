@@ -9,7 +9,7 @@
 }
 .path {
   width: 55%;
-  font-size: 10px;
+  font-size: 20px;
   color: grey;
   margin-bottom: 20px;
 }
@@ -221,7 +221,7 @@
   color: rgb(241, 87, 0);
 }
 .secondary {
-  padding: 16px 24px;
+  padding: 15px 16px;
   display: flex;
   flex-direction: column;
   gap: 10px;
